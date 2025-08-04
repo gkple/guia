@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes das Chaves - O Guia Completo para Comprar seu Imóvel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        /* Seção 1 - Hero */
+        .hero {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3.5rem;
+            color: #1b3b2f;
+            margin-bottom: 30px;
+            line-height: 1.1;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            color: #222;
+            margin-bottom: 40px;
+            font-weight: 600;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #1b3b2f 0%, #2d5a47 100%);
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(27, 59, 47, 0.3);
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(27, 59, 47, 0.4);
+        }
+
+        .mockup-image {
+            max-width: 400px;
+            width: 100%;
+            margin: 40px auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .banner-quote {
+            background: linear-gradient(135deg, #fcbf49 0%, #f4a261 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(252, 191, 73, 0.3);
+        }
+
+        .banner-quote p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #222;
+            font-style: italic;
+        }
+
+        /* Barra de Timer no Topo */
+        .top-timer-bar {
+            background: linear-gradient(135deg, #e63946 0%, #d62839 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(230, 57, 70, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.005); }
+            100% { transform: scale(1); }
+        }
+
+        .timer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .timer-text {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .timer-display {
+            font-size: 1.8rem;
+            font-weight: 800;
+            font-family: 'Bebas Neue', cursive;
+            color: #fcbf49;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.2);
+            padding: 5px 15px;
+            border-radius: 25px;
+        }
+
+        /* Seção 2 - Depoimentos */
+        .testimonials {
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #1b3b2f;
+            margin-bottom: 20px;
+        }
+
+        .testimonials .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-images {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .testimonial-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Seção 3 - Problemas */
+        .problems {
+            background: white;
+        }
+
+        .problems h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.3rem;
+            color: #e63946;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .problems-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .problem-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fff5f5;
+            border-radius: 10px;
+            border-left: 5px solid #e63946;
+        }
+
+        .problem-item .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #e63946;
+        }
+
+        .problem-item p {
+            font-size: 1.1rem;
+            color: #222;
+            font-weight: 500;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #e63946 0%, #d62839 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px auto;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(230, 57, 70, 0.3);
+        }
+
+        .warning-box p {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        /* Seção 4 - Benefícios */
+        .benefits {
+            background: linear-gradient(135deg, #f0f8f0 0%, #ffffff 100%);
+        }
+
+        .benefits h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #1b3b2f;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(27, 59, 47, 0.1);
+            border-left: 5px solid #1b3b2f;
+        }
+
+        .benefit-item .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #1b3b2f;
+        }
+
+        .benefit-item p {
+            font-size: 1.1rem;
+            color: #222;
+            font-weight: 500;
+        }
+
+        /* Seção 5 - O que você recebe */
+        .package {
+            background: white;
+            text-align: center;
+        }
+
+        .package h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #1b3b2f;
+            margin-bottom: 50px;
+        }
+
+        .package-items {
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .package-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .package-item .icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: #1b3b2f;
+        }
+
+        .package-item div h3 {
+            font-size: 1.3rem;
+            color: #1b3b2f;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .package-item div p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .bonus-item {
+            position: relative;
+            border: 2px solid #fcbf49;
+            background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+        }
+
+        .bonus-badge {
+            background: linear-gradient(135deg, #fcbf49 0%, #f4a261 100%);
+            color: #222;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-right: 10px;
+            box-shadow: 0 2px 10px rgba(252, 191, 73, 0.3);
+        }
+
+        .highlight-text {
+            background: linear-gradient(135deg, #fcbf49 0%, #f4a261 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+
+        .highlight-text p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .package-mockup {
+            max-width: 300px;
+            width: 100%;
+            margin: 30px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .banner-image {
+            max-width: 600px;
+            width: 100%;
+            margin: 40px auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .banner-text {
+            background: linear-gradient(135deg, #1b3b2f 0%, #2d5a47 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .banner-text p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        /* Seção 6 - Segurança */
+        .security {
+            background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .security h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.3rem;
+            color: #1b3b2f;
+            margin-bottom: 40px;
+        }
+
+        .security-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .security-badges img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .security-text {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .security-text > p {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1b3b2f;
+            margin-bottom: 30px;
+        }
+
+        .security-items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .security-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .security-item .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #1b3b2f;
+        }
+
+        .security-item p {
+            font-size: 1.1rem;
+            color: #222;
+            font-weight: 500;
+        }
+
+        /* Seção 7 - Promoção */
+        .promotion {
+            background: linear-gradient(135deg, #fff3cd 0%, #fcbf49 100%);
+            text-align: center;
+        }
+
+        .promotion h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #e63946;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .promotion-image {
+            max-width: 500px;
+            width: 100%;
+            margin: 30px auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .promotion-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #222;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+
+        /* Seção 8 - CTA Final */
+        .final-cta {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.3rem;
+            color: #1b3b2f;
+            margin-bottom: 40px;
+        }
+
+        .cta-details {
+            margin-top: 30px;
+        }
+
+        .cta-details p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        /* Seção 9 - FAQ */
+        .faq {
+            background: #f8f9fa;
+        }
+
+        .faq h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.3rem;
+            color: #1b3b2f;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .faq-items {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            background: #1b3b2f;
+            color: white;
+            cursor: pointer;
+        }
+
+        .faq-question .icon {
+            font-size: 1.3rem;
+            margin-right: 15px;
+        }
+
+        .faq-question h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .faq-answer {
+            padding: 25px;
+            background: white;
+        }
+
+        .faq-answer p {
+            font-size: 1.1rem;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Rodapé */
+        .footer {
+            background: #222;
+            color: #ccc;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content p {
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .footer-content a {
+            color: #fcbf49;
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+            
+            .testimonial-images {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .problem-item,
+            .benefit-item,
+            .package-item,
+            .security-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .problem-item .icon,
+            .benefit-item .icon,
+            .package-item .icon,
+            .security-item .icon {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+
+            .security-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .security-badges img {
+                max-width: 120px;
+            }
+
+            .faq-question {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .faq-question .icon {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+
+            .timer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .timer-text {
+                font-size: 0.9rem;
+            }
+
+            .timer-display {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1119858939990877');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1119858939990877&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	
+</head>
+<body>
+    <!-- Barra de Timer no Topo -->
+    <div class="top-timer-bar">
+        <div class="container">
+            <div class="timer-content">
+                <div class="timer-text">
+                    <span>🚨 Oferta relâmpago: De R$197,90 por apenas R$29,90 | 💸 Você economiza R$168 | 🔥 Desconto de 85% só por:</span>
+                </div>
+                <div class="timer-display" id="countdown">15:00</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção 1 - Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>🗝 O Guia que Todo Brasileiro Deveria Ler Antes de Comprar um Imóvel</h1>
+            <p class="subtitle">Evite armadilhas, economize milhares de reais e compre seu imóvel com total segurança e confiança.</p>
+            
+            <img src="https://imgur.com/fDv0YqL.jpg" alt="Guia Antes das Chaves" class="mockup-image">
+            
+            <a href="https://pay.kiwify.com.br/r4ezIZZ" class="cta-button">QUERO O GUIA COMPLETO AGORA ></a>
+            
+            <img src="https://imgur.com/YTeEfJE.jpg" alt="Banner" class="banner-image">
+            
+            <div class="banner-quote">
+                <p>"Já imaginou o dia em que você vai assinar os papéis e tirar a foto das chaves da sua casa? Com o guia certo, esse dia chega mais rápido."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2 - Depoimentos -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2>Mais de 1.200 brasileiros já baixaram e evitaram prejuízos com este guia</h2>
+            <p class="subtitle">Veja o que as pessoas estão dizendo depois de ler o "Antes das Chaves":</p>
+            
+            <div class="testimonial-images">
+                <div class="testimonial-card">
+                    <img src="https://imgur.com/qaub8Cd.jpg" alt="Depoimento 1">
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://imgur.com/GhnOg58.jpg" alt="Depoimento 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3 - Problemas -->
+    <section class="problems section">
+        <div class="container">
+            <h2>❌ Você sabia que 7 em cada 10 brasileiros cometem pelo menos um desses erros na hora de comprar um imóvel?</h2>
+            
+            <div class="problems-list">
+                <div class="problem-item">
+                    <span class="icon">⚠️</span>
+                    <p>Entrar em um financiamento sem saber o real impacto nas finanças</p>
+                </div>
+                
+                <div class="problem-item">
+                    <span class="icon">⚠️</span>
+                    <p>Acreditar que o corretor vai alertar sobre todos os riscos</p>
+                </div>
+                
+                <div class="problem-item">
+                    <span class="icon">⚠️</span>
+                    <p>Não simular a compra completa antes de visitar imóveis</p>
+                </div>
+                
+                <div class="problem-item">
+                    <span class="icon">⚠️</span>
+                    <p>Comprar pela emoção e esquecer de checar a documentação</p>
+                </div>
+                
+                <div class="problem-item">
+                    <span class="icon">⚠️</span>
+                    <p>Não saber o custo real da entrada, ITBI e escritura</p>
+                </div>
+                
+                <div class="problem-item">
+                    <span class="icon">⚠️</span>
+                    <p>Escolher o bairro errado e se arrepender depois da mudança</p>
+                </div>
+                
+                <div class="problem-item">
+                    <span class="icon">⚠️</span>
+                    <p>Perder dinheiro por não saber negociar como um comprador profissional</p>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <p>🚨 Um erro na compra de um imóvel pode custar R$ 10.000, R$ 50.000 ou até mais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 4 - Benefícios -->
+    <section class="benefits section">
+        <div class="container">
+            <h2>✅ O que você vai aprender no "Antes das Chaves"</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <span class="icon">🏠</span>
+                    <p>Como saber se é melhor comprar ou continuar alugando</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="icon">💰</span>
+                    <p>Como calcular seu teto de compra com segurança</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="icon">🎯</span>
+                    <p>Como identificar o imóvel ideal para o seu momento de vida</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="icon">🛡️</span>
+                    <p>Como evitar golpes e documentos fraudulentos</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="icon">🤝</span>
+                    <p>Técnicas de negociação para conseguir descontos reais</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="icon">📋</span>
+                    <p>Checklist para visitas e perguntas que revelam verdades escondidas</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="icon">🏦</span>
+                    <p>Como usar o FGTS sem complicações</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="icon">📊</span>
+                    <p>Quais taxas e custos ninguém te conta (e que você vai pagar se não souber)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 5 - O que você recebe -->
+    <section class="package section">
+        <div class="container">
+            <h2>📦 Você recebe imediatamente após o pagamento:</h2>
+            
+            <div class="package-items">
+                <div class="package-item">
+                    <span class="icon">📘</span>
+                    <div>
+                        <h3>O Guia "Antes das Chaves"</h3>
+                        <p>Ebook completo com dicas, orientações e estratégias</p>
+                    </div>
+                </div>
+                
+                <div class="package-item bonus-item">
+                    <span class="icon">📊</span>
+                    <div>
+                        <h3><span class="bonus-badge">BÔNUS</span> Planilha de Cálculo de Capacidade de Compra</h3>
+                        <p>Descubra seu limite real antes de visitar qualquer imóvel</p>
+                    </div>
+                </div>
+                
+                <div class="package-item bonus-item">
+                    <span class="icon">📄</span>
+                    <div>
+                        <h3><span class="bonus-badge">BÔNUS</span> Checklist Prático</h3>
+                        <p>Lista pronta para usar nas visitas e conversas com corretores</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-text">
+                <p>🧠 Tudo pronto para imprimir, usar e economizar milhares de reais.</p>
+            </div>
+            
+            <img src="https://imgur.com/fDv0YqL.jpg" alt="Guia Completo" class="package-mockup">
+            
+            <img src="https://imgur.com/uSxy0wu.jpg" alt="Banner Planilha" class="banner-image">
+            
+            <div class="banner-text">
+                <p>"Descubra seu teto de compra real com a planilha que já ajudou dezenas de brasileiros a evitarem dívidas impagáveis."</p>
+            </div>
+            
+            <a href="https://pay.kiwify.com.br/r4ezIZZ" class="cta-button">QUERO O GUIA COMPLETO AGORA</a>
+        </div>
+    </section>
+
+    <!-- Seção 6 - Segurança -->
+    <section class="security section">
+        <div class="container">
+            <h2>🔒 Compra 100% Segura. Garantida ou seu dinheiro de volta.</h2>
+            
+            <div class="security-badges">
+                <img src="https://imgur.com/SnPYPFN.jpg" alt="Segurança SSL">
+                <img src="https://imgur.com/uBqhMGo.jpg" alt="Kiwify">
+                <img src="https://imgur.com/BqCkIgc.jpg" alt="Garantia">
+            </div>
+            
+            <div class="security-text">
+                <p><strong>Você está completamente protegido:</strong></p>
+                <div class="security-items">
+                    <div class="security-item">
+                        <span class="icon">🔐</span>
+                        <p>Ambiente com segurança criptografada (como qualquer banco)</p>
+                    </div>
+                    <div class="security-item">
+                        <span class="icon">💳</span>
+                        <p>Pagamento pela Kiwify, uma das maiores plataformas do Brasil</p>
+                    </div>
+                    <div class="security-item">
+                        <span class="icon">✅</span>
+                        <p>Garantia incondicional de 7 dias: não gostou? É só pedir reembolso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 7 - Promoção -->
+    <section class="promotion section">
+        <div class="container">
+            <h2>🎯 PROMOÇÃO – por tempo limitado!</h2>
+            
+            <img src="https://imgur.com/f5vtgeo.jpg" alt="Oferta Especial" class="promotion-image">
+            
+            <p class="promotion-text">Esse valor é por tempo limitado e pode voltar ao normal a qualquer momento.<br>
+            Você tem acesso imediato ao conteúdo, direto no seu e-mail.</p>
+            
+            <img src="https://imgur.com/B8hKD0t.jpg" alt="Banner Final" class="banner-image">
+            
+            <div class="banner-text">
+                <p>"As chaves do seu futuro estão a um clique de distância."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 8 - CTA Final -->
+    <section class="final-cta section">
+        <div class="container">
+            <h2>🎁 Garanta agora o seu acesso e comece a economizar na sua compra de imóvel!</h2>
+            
+            <a href="https://pay.kiwify.com.br/r4ezIZZ" class="cta-button">QUERO O GUIA COMPLETO AGORA ></a>
+            
+            <div class="cta-details">
+                <p>📩 Entrega imediata no seu e-mail</p>
+                <p>⏳ A oferta de R$29,90 pode acabar a qualquer momento</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 9 - FAQ -->
+    <section class="faq section">
+        <div class="container">
+            <h2>❓ Ainda com dúvidas? A gente responde:</h2>
+            
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="icon">👉</span>
+                        <h3>Em quanto tempo recebo o material?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você recebe imediatamente após a confirmação do pagamento, direto no seu e-mail.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="icon">👉</span>
+                        <h3>É indicado mesmo pra quem ainda está só pesquisando sobre imóveis?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! O guia foi feito justamente para quem quer evitar erros desde o início, mesmo antes de começar as visitas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="icon">👉</span>
+                        <h3>Esse valor é mesmo só R$29,90?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, por tempo limitado. O valor original é R$197,90, mas hoje você garante por R$29,90.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="icon">👉</span>
+                        <h3>Posso usar no celular?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Claro! Tanto o eBook, quanto a planilha e checklist funcionam perfeitamente em celular, tablet ou computador.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="icon">👉</span>
+                        <h3>E se eu não gostar?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você tem 7 dias de garantia. Se não curtir, é só pedir reembolso com 1 clique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Universidade Prática Digital. Todos os direitos reservados.</p>
+                <p>CNPJ 39.725.790/0001-08</p>
+                <p>Este site não é afiliado ao Facebook™, Instagram™ ou Google™.</p>
+                <p>Ao adquirir este produto, você concorda com nossos <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.</p>
+                <p>Suporte: atendimento@universidadepraticadigital.com.br</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            let timeLeft = 15 * 60; // 15 minutes in seconds
+            
+            const timer = setInterval(function() {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                
+                document.getElementById('countdown').textContent = 
+                    minutes.toString().padStart(2, '0') + ':' + 
+                    seconds.toString().padStart(2, '0');
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    document.getElementById('countdown').textContent = "00:00";
+                }
+                
+                timeLeft--;
+            }, 1000);
+        }
+        
+        // Start countdown when page loads
+        window.addEventListener('load', startCountdown);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96a0c0cd43e40c10',t:'MTc1NDMzODgwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+<script>
+  // Captura o valor do parâmetro ?src da URL
+  function getParamValue(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+  const srcParam = getParamValue("src");
+
+  // Atualiza todos os botões com a classe "cta-button"
+  const ctaButtons = document.querySelectorAll('.cta-button');
+  ctaButtons.forEach(button => {
+    const baseLink = "https://pay.kiwify.com.br/r4ezIZZ";
+    button.href = srcParam ? `${baseLink}?src=${srcParam}` : baseLink;
+  });
+</script>
+
+
+</body>
+</html>
